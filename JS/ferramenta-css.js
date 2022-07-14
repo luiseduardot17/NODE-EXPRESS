@@ -3,7 +3,7 @@ import chalk from 'chalk';
 
 const propriedades = [];
 
-console.log(chalk.yellow('Digite uma propriedade de CSS e pressione ENTER para adicionar outra. Quando terminar digite SAIR'));
+console.log(chalk.yellow('Digite uma propriedade de CSS e pressione ENTER para adicionar outra. Quando terminar digite "sair"'));
 readlineSync.promptLoop(function (input) {
     console.log(chalk.blue('-- Você adicionou a propriedade "' + input + '"a sua lista!'));
     propriedades.push(input)
